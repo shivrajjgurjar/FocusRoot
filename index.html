@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Focus Forest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            colors: {
+              forest: { 50: '#f2fcf5', 100: '#e1f8e8', 200: '#c3eed2', 300: '#94e0b3', 400: '#5ccb90', 500: '#34af75', 600: '#268e5e', 700: '#22714d', 800: '#1f5a3f', 900: '#1a4a35' },
+              wood: { 50: '#fbf7f3', 100: '#f5efe8', 200: '#ebdecfe', 300: '#dec2a8', 400: '#ce9f7e', 500: '#c38059', 600: '#b66645', 700: '#974f38', 800: '#7d4132', 900: '#65372b' }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background-color: #fbf7f3; color: #1a4a35; -webkit-tap-highlight-color: transparent; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #dec2a8; border-radius: 3px; }
+      .premium-slider { -webkit-appearance: none; width: 100%; height: 6px; background: #e5e7eb; border-radius: 999px; outline: none; transition: background 0.3s; cursor: pointer; }
+      .premium-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 24px; height: 24px; border-radius: 50%; background: #34af75; border: 3px solid #fbf7f3; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); cursor: pointer; margin-top: -9px; transition: transform 0.1s ease-out; }
+      .premium-slider:active::-webkit-slider-thumb { transform: scale(1.2); background: #268e5e; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
+
